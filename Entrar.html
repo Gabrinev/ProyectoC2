@@ -11,21 +11,21 @@
 		<div class="container">
 			<h1>Entrada</h1>
 			<form>
-				<div class="row">				
+				<div class="row entrada">				
 					<div class="col-md-6" id="EspUsuari">
 						<label class="control-label" for="UsuariInput">Usuari</label>
 						<input class="form-control" id="UsuariInput">			
 					</div>
 				</div>
-				<div class="row">
+				<div class="row entrada">
 					<div class="col-md-6" id="EspContra">
 						<label class="control-label" for="ContraInput">Contrasenya</label>
-						<input class="form-control" id="ContraInput">			
+						<input type="password" class="form-control" id="ContraInput">			
 					</div>
 				</div>
-				<div class="row justify-content-between">				
-						<button type="button" class="btn col-md-2" id="ContinuarBtn" onclick="Comprobar()">Continuar</button>
-						<button type="button" class="btn col-md-2" id="RegistrarBtn">Registrar-se</button>					
+				<div class="row justify-content-between entrada" id="Botones">				
+						<button type="button" class="btn btn-danger col-md-2" id="ContinuarBtn" onclick="Comprobar()">Continuar</button>
+						<button type="button" class="btn btn-danger col-md-2" id="RegistrarBtn">Registrar-se</button>					
 				</div>
 			</form>
 		</div>
