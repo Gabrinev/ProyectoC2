@@ -1,24 +1,44 @@
-h1{
+h1, h2{
     text-align: center;
 }
+main {
+    display: flex;
+    flex-direction: row;
+    
+  }
+.item {
+    font-size: 1.5rem;
+    line-height: 1;
+    text-align: center;
+    padding: 3rem 1rem;
+    
+    margin: 6px;
+}
+.footer{
+    background: lightblue;
+    border-radius: 40px;
+    
+}
 
-.container {
-    width: 80%;
-    height: 200px;
-    background: aqua;
-    margin: auto;
-    padding: 10px;
-  }
+ul.list{
+    text-align: left;
+
+
+}
+.sidebar-left { 
+    border-radius: 40px;
+    order: 1;
+    flex: 1;
+    background: #A63D4D;
+}
   
-.one {
-    width: 15%;
-    height: 200px;
-    background: red;
-    float: left;
-  }
-  
-.two {
-    margin-left: 15%;
-    height: 200px;
-    background: black;
-  }
+.sidebar-right {
+    border-radius: 40px;
+    order: 3;
+    flex: 1;
+    background: #4DA63D;
+}
+
+hr{
+    border: 1px solid;
+}
