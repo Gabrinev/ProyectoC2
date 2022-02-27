@@ -8,31 +8,43 @@
       <script type="text/javascript" src="Comprobacion.js"></script>
     </head>
     <body>
+
+        <div id="mensaje"></div>
+ 
+        <!-- Mensajes de Verificación -->
+        <div id="error" class="alert alert-danger ocultar" role="alert">
+            Las Contraseñas no coinciden, vuelve a intentar !
+        </div>
+        <div id="ok" class="alert alert-success ocultar" role="alert">
+            Registrado correctamente.
+        </div>
+
         <div class="container" id="ContainerForm">
             <div class="row">
                 <div class="col-md-4">
-                    <form action="/login.html" id="formulario">
+                    <form action="/login.html" id="formulario" onsubmit="verificarPasswords(); return false">
                         <h1 id="Registro">Registro de nuevo usuario</h1>
                         <label  class="inputscolors" for="nombre">Nombre:</label>
-                        <input id="nombre" class="form-control"  placeholder="Escribe tu nombre aquí">
+                        <input id="usuario" type="usuario" class="form-control"  placeholder="Escribe tu nombre aquí" required>
                         <label  class="inputscolors" for="nombre">Email:</label>
-                        <input type="email" id="nombre" class="form-control"  placeholder="Escribe tu nombre aquí">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Correo Electronico" onkeyup="validarEmail(this)">
+                        <a id='resultado'></a><br>
                         <label class="inputscolors" for="Contraseña">Contraseña:</label>
-                        <input type="password" id="nombre" class="form-control"  placeholder="Escribe tu nombre aquí">
+                        <input type="password" id="paswd1" name="clave" class="form-control"  placeholder="Escribe tu nombre aquí">
                         <label class="inputscolors" for="Contraseña">Repite la contraseña:</label>
-                        <input type="password" id="nombre" class="form-control"  placeholder="Confirmar contraseña">
+                        <input type="password" id="paswd2" class="form-control"  placeholder="Confirmar contraseña" required>
                             <div class="col-md-4" id="containerbtn">
-                                <button type="submit" id="btn-registro" value="Enviar" class="btn btn-light">Registrarse</button>
+                                <button id="login" type="submit" id="btn-registro" value="Entrar" class="btn btn-light">Registrarse</button>
                             </div>
                     </div>
                         <div class="col-md-4" id="ContainerForm2" >
                             <label class="inputscolors"  class="inputscolors" for="nombre">Apellidos:</label>
                             <input id="nombre" class="form-control"  placeholder="Escribe tu apellidos aquí">
                             <label class="inputscolors" for="">NIF/CIF:</label>
-                            <input type="text" placeholder="DNI" class="form-control" size="10"  maxlength="9" name="nif" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" title="Introduzca el dni" required>
-                            <label for="">Selecciona el genero</label><br>  
+                            <input type="text" class="form-control" name="dni" required minlength="9" maxlength="10" pattern="((\d{8})([-]?)([A-Z]{1}))" title="Ejemplo: 123456789A">
+                            <label for="" class="inputscolors">Selecciona el genero</label><br>  
                             <input type="radio" name="Hombre" value="hombre"> Hombre<br>
-                            <input type="radio" name="Mujer" value="mujer"> Mujer 
+                            <input type="radio" name="Mujer" value="mujer"> Mujer <br>
                             <label  id="ntelf" for="">Numero telefono:</label>
                             <input type="number" name="telefono" class="form-control" size="9">
                         </div>
