@@ -8,7 +8,7 @@
       <script type="text/javascript" src="Comprobacion.js"></script>
     </head>
     <body>
-        <div class="container" id="ContainerRegister">
+        <div class="container" id="ContainerForm">
             <div class="row">
                 <div class="col-md-4">
                     <form action="/login.html" id="formulario">
@@ -24,20 +24,22 @@
                             <div class="col-md-4" id="containerbtn">
                                 <button type="submit" id="btn-registro" value="Enviar" class="btn btn-light">Registrarse</button>
                             </div>
-                    </form>
-                 </div>
-                 <div class="col-md-4" id="containerInputs" >
-                    <label class="inputscolors"  class="inputscolors" for="nombre">Apellidos:</label>
-                    <input id="nombre" class="form-control"  placeholder="Escribe tu apellidos aquí">
-                    <label class="inputscolors" for="">NIF/CIF:</label>
-                    <input type="text" placeholder="DNI" class="form-control" size="10"  maxlength="9" name="nif" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" title="Introduzca el dni" required>
-                    <label for="">Selecciona el genero</label><br>  
-                    <input type="radio" name="empleoactual" value="mediodia"> Hombre<br>
-                   <input type="radio" name="empleoactual" value="sinempleo"> Mujer
-                 </div>
+                    </div>
+                        <div class="col-md-4" id="ContainerForm2" >
+                            <label class="inputscolors"  class="inputscolors" for="nombre">Apellidos:</label>
+                            <input id="nombre" class="form-control"  placeholder="Escribe tu apellidos aquí">
+                            <label class="inputscolors" for="">NIF/CIF:</label>
+                            <input type="text" placeholder="DNI" class="form-control" size="10"  maxlength="9" name="nif" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" title="Introduzca el dni" required>
+                            <label for="">Selecciona el genero</label><br>  
+                            <input type="radio" name="Hombre" value="hombre"> Hombre<br>
+                            <input type="radio" name="Mujer" value="mujer"> Mujer 
+                            <label  id="ntelf" for="">Numero telefono:</label>
+                            <input type="number" name="telefono" class="form-control" size="9">
+                        </div>
+                    </form> 
+                </div>   
             </div>
-
-        </div>  
+        </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
