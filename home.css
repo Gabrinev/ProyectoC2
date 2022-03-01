@@ -6,6 +6,7 @@ main {
     flex-direction: row;
     
   }
+
 .item {
     font-size: 1.5rem;
     line-height: 1;
@@ -16,8 +17,11 @@ main {
 }
 .footer{
     background: lightblue;
-    border-radius: 40px;
+    border-radius: 15px;
     transition: background-color .05s;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .footer:hover, .sidebar-left:hover, .sidebar-right:hover{
@@ -26,7 +30,7 @@ main {
     border: 2px solid #004480;
     user-select: none;
     cursor: pointer;
-    /* font-size: 30px; */
+    /* font-size: 25px; */
 }
 
 .footer:active, .sidebar-left:active, .sidebar-right:active{
@@ -41,23 +45,23 @@ ul.list{
 
 }
 .sidebar-left { 
-    border-radius: 40px;
+    border-radius: 15px;
     order: 1;
     flex: 1;
     background: #5293cc;
     color:rgb(0, 0, 0);
     transition: background-color .5s;
-    border: 2px solid transparent;
+    border: 2px solid #87c7ff;
 }
   
 .sidebar-right {
-    border-radius: 40px;
+    border-radius: 15px;
     order: 3;
     flex: 1;
     background: #5293cc;
     color:rgb(0, 0, 0);
     transition: background-color .5s;
-    border: 2px solid transparent;
+    border: 2px solid #87c7ff;
 }
 
 hr{
