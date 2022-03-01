@@ -1,0 +1,71 @@
+div h1, h2{
+    margin-top: 4%;
+    text-align: center;
+}
+.main{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+button.download { 
+    float: right;
+    margin-right: 4%;
+    position:absolute;
+    bottom:0;
+    right: 0;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    background-color:#006dcc !important;
+    border-color: #006dcc !important;
+    transition: background-color .5s;
+}
+
+button.download:hover{
+    background-color: #5e0029;
+}
+
+.item {
+    margin-left: 1px;
+    height: 400px;
+    /* padding-bottom: 15%; Same as width, sets height */
+    margin-bottom:  3%; /* (100-32*3)/2 */
+    position: relative;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #4d8abf;
+    border-radius: 25px;
+    transition: background-color .5s;
+  }
+
+  .item:hover{
+    background: rgba(255, 255, 255, 0.35);
+
+  }
+.pdf {
+    list-style-image: url('https://img.icons8.com/office/16/000000/pdf.png');
+    
+}
+.img {
+    list-style-image: url('https://img.icons8.com/material-outlined/16/000000/picture.png');
+    
+}
+.html{
+    list-style-image: url("https://img.icons8.com/material-two-tone/16/000000/html.png");
+}
+.doc{
+    list-style-image: url("https://img.icons8.com/material-outlined/16/000000/document--v2.png");
+}
+.url{
+    list-style-image: url("https://img.icons8.com/external-icongeek26-glyph-icongeek26/16/000000/external-url-essentials-icongeek26-glyph-icongeek26.png");
+}
+
+li{
+    font-weight: bold;
+    margin-bottom: 3%;
+    margin-left: 4%;
+    
+}
+a{
+    color: blue;
+}
+
+  
