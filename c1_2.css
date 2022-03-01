@@ -1,0 +1,62 @@
+div h1, h2{
+    margin-top: 4%;
+    text-align: center;
+}
+.main{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+  }
+button { 
+    float: right;
+    margin-right: 4%;
+}
+
+
+  
+.item {
+    
+    width: 28%;
+    padding-bottom: 15%; /* Same as width, sets height */
+    margin-bottom:  3%; /* (100-32*3)/2 */
+    position: relative;
+    background: aquamarine;
+    border-radius: 25px;
+  }
+.pdf {
+    list-style-image: url('https://img.icons8.com/office/16/000000/pdf.png');
+    
+}
+.img {
+    list-style-image: url('https://img.icons8.com/material-outlined/16/000000/picture.png');
+    
+}
+.html{
+    list-style-image: url("https://img.icons8.com/material-two-tone/16/000000/html.png");
+}
+.doc{
+    list-style-image: url("https://img.icons8.com/material-outlined/16/000000/document--v2.png");
+}
+.url{
+    list-style-image: url("https://img.icons8.com/external-icongeek26-glyph-icongeek26/16/000000/external-url-essentials-icongeek26-glyph-icongeek26.png");
+}
+
+
+
+
+li{
+    font-weight: bold;
+    margin-bottom: 3%;
+    margin-left: 4%;
+    
+}
+a{
+    color: blue;
+}
+
+  
