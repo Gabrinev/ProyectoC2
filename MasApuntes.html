@@ -9,9 +9,10 @@
     <script src="funcionesMasApuntes.js"></script>
 
 </head>
-<body style="max-width: 500px; margin-left: auto; margin-right: auto; padding:10px; background-color: cornflowerblue;">
+<body style="max-width: 500px; margin-left: auto; margin-right: auto; padding:10px; background-color: cornflowerblue; border: 1px solid white;
+margin-top: 60px;">
     <h1>Pedir un recurso adicional</h1>
-    <form onsubmit="DevolverPedido()">
+    <form>
        <div class="form-group mb-4">
            <label for="TextInput">Que quieres pedir?</label>
            <textarea class="form-control"name="form-control" id="TextInput" rows="5" requierd></textarea>
@@ -40,8 +41,8 @@
             </label>
           </div>
         <div class="row justify-content-end mb-4">   
-        <button class=" col-12 col-md-2 btn order-2 order-md-1 btn-secondary m-2">Cancelar</button>
-        <button type="submit" class="m-2 order-1 order-md-2 col-12 col-md-2 btn btn-primary" >Enviar</button>
+        <button type="button"class=" col-12 col-md-2 btn order-2 order-md-1 btn-secondary m-2"  onclick="CancelPedido()">Cancelar</button>
+        <button type="button" class="m-2 order-1 order-md-2 col-12 col-md-2 btn btn-primary" onclick="DevolverPedido()">Enviar</button>
     </div>
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

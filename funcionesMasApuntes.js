@@ -17,4 +17,10 @@ function ModifyCorreo () {
 function DevolverPedido(){
 
     alert("Buenos dias\n Se te va a buscar documentación con:\n Descripción: "+ $("#TextInput").val()+"\n De extensión: " + $("#media option:selected").text() + "\n A la dirección de correo: " + $("#staticEmail").val())
+    // window.open('home.html')
+    window.location.href = '/home.html'
+}
+
+function CancelPedido(){
+    window.location.href = '/home.html'
 }
