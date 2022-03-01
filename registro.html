@@ -11,19 +11,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Formulario de registro</h1>
+    <h1 id="FormRegistro">Formulario de registro</h1>
     <form action="/Entrar.html" method="post" class="form-register" onsubmit="return validar();">
         <div class="container">
             <div class="row">
-              <div class="col-md-4">
+                <div>
+                    <div class="col-md-6">
                     <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" class="input-48" required >
                     <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="apellidos" class="input-48"required >
-                        <input type="email" class="form-control" id="correo" name="correo" placeholder="correo" class="input-40"required >
-                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario" class="input-48"required >
+                    <input type="email" class="form-control" id="correo" name="correo" placeholder="correo" class="input-40"required >
+                </div>
                     <div class="col-md-6">
+                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario" class="input-48"required >
                         <input type="password" class="form-control" id="clave" name="clave" placeholder="Contraseña" class="input-48" required>
                         <input type="text" class="form-control" id="telefono" name="telefono" placeholder="telefono" class="input-100"required >
-                        <input type="submit" id="botonSubmit" class="btn" onclick="Entrar()" name="Registro" value="Registrar" class="btn-enviar" placeholder="Nombre" class="input-48"required >
+                        <input type="submit" id="ContinuarBtn2" class="btn" onclick="Entrar()" name="Registro" value="Registrar" class="btn-enviar" placeholder="Nombre" class="input-48"required >
                         <p class="form__link">Tienes una cuenta creada? <a href="#">ingresar aqui</a></p>
                     </div>
               </div>
