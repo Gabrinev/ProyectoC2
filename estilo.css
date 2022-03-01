@@ -8,7 +8,7 @@
 #Titulo2 {
   width: 90% !important;
 }
-#LabelEntrada2 {
+.LabelEntrada2 {
   font-size: 23px;
   font-family: "Barlow Condensed";
   color: white;
