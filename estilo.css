@@ -1,0 +1,16 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+#botonSubmit
+{
+  
+    height: 50px;
+	font-family: 'Barlow Condensed';
+	color: white;
+	background-color: #007ae6;
+	border-radius: 15px;
+	box-shadow: 0px 3px 2px #00294d;
+	transition: all 200ms;
+}
