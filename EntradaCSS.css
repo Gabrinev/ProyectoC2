@@ -45,6 +45,10 @@
 {
     margin-bottom:8px;
 }
+#formEntrada
+{
+	height: 50px;
+}
 #containerBackground
 {  
     margin-left: 0 ;
@@ -62,13 +66,13 @@
     margin-left: 20px;
     margin-right: 0;
     max-width: 100% !important;
-	height: 406px;
     margin-bottom:100px;
 }
 #ContinuarBtn
 {   
     height: 50px;
 	font-family: 'Barlow Condensed';
+	font-size: 19px;
 	color: white;
 	background-color: #007ae6;
 	border-radius: 15px;
@@ -87,6 +91,7 @@
 {   
     height: 50px;
 	font-family: 'Barlow Condensed';
+	font-size: 19px;
 	color: white;
 	background-color: #007ae6;
 	border-radius: 15px;

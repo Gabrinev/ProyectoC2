@@ -19,9 +19,10 @@ function Comprobar()
 {
     var UsuariInsertat = $("#UsuariInput").val()
     var ContraInsertat = $("#ContraInput").val()
-    console.log("Hola")
+    console.log("Hola")   
     if(UsuariInsertat === "Pepito" && ContraInsertat === "123456X")
     {
+        document.cookie = "UsuariInsertat=Pepito; Contrasenya=123456X";
         window.location.href = "/home.html"
     }
 	if(UsuariInsertat != "Pepito" && ContraInsertat != "123456X")
@@ -36,5 +37,5 @@ function Comprobar()
 
 function Redirigir() 
 {
-    window.location.href = "/SignIn.html"
+    window.location.href = "/registro.html"
 }
