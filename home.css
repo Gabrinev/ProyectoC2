@@ -17,13 +17,24 @@ main {
 .footer{
     background: lightblue;
     border-radius: 40px;
-    transition: background-color .5s;
+    transition: background-color .05s;
     
 }
 .footer:hover, .sidebar-left:hover, .sidebar-right:hover{
-    background-color: gold;
+    background-color: #004480;
+    color: rgb(255, 255, 255);
+    border: 2px solid #004480;
+    user-select: none;
+    cursor: pointer;
+    /* font-size: 30px; */
 }
 
+.footer:active, .sidebar-left:active, .sidebar-right:active{
+    background-color: #00294d;
+    box-shadow: 0 5px  #001b33;
+    transform: translateY(4px);
+
+}
 ul.list{
     text-align: left;
 
@@ -33,16 +44,20 @@ ul.list{
     border-radius: 40px;
     order: 1;
     flex: 1;
-    background: #A63D4D;
+    background: #5293cc;
+    color:rgb(0, 0, 0);
     transition: background-color .5s;
+    border: 2px solid transparent;
 }
   
 .sidebar-right {
     border-radius: 40px;
     order: 3;
     flex: 1;
-    background: #4DA63D;
+    background: #5293cc;
+    color:rgb(0, 0, 0);
     transition: background-color .5s;
+    border: 2px solid transparent;
 }
 
 hr{
