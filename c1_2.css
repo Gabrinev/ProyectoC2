@@ -15,6 +15,13 @@ button.download {
     right: 0;
     margin-bottom: 12px;
     border-radius: 15px;
+    background-color:#006dcc !important;
+    border-color: #006dcc !important;
+    transition: background-color .5s;
+}
+
+button.download:hover{
+    background-color: #5e0029;
 }
 
 .item {
