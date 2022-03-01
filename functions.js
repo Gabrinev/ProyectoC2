@@ -16,5 +16,5 @@ function Comprobar() {
 }
 
 function Redirigir() {
-  window.location.href = "/registro.html";
+  window.location.href = "./registro.html";
 }

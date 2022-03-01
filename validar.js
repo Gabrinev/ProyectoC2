@@ -43,10 +43,4 @@ function validar() {
 
   document.cookie = `Usuario=${nombre}`;
   window.location.href = "./Entrar.html";
-
-  function Entrar() {
-    if (nombre.value != 0 || apellidos.value != 0 || correo.value != 0) {
-      window.location.href = "/Entrar.html";
-    }
-  }
 }
