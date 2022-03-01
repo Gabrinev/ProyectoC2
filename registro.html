@@ -18,13 +18,11 @@
 
   <body id="bodyEntrada2">
     <div class="container-fluid" id="containerBackground2">
-      <div class="row mt-2" id="Titulo2">
-        <h1 class="col-md-12 mt-2" id="TituloEntrada2">
-          Formulario de registro
-        </h1>
+      <div class="row" id="Titulo2">
+        <h1 class="col-md-5" id="TituloEntrada2">Formulario de registro</h1>
       </div>
-      <form id="formEntrada2" class="row justify-content-beginning mx-3 my-2">
-        <div class="col-12 col-md-5" id="EspUsuari2">
+      <form id="formEntrada2" class="row justify-content-beginning mx-5 my-2">
+        <div class="col-12 col-md-6" id="EspUsuari2">
           <label class="control-label" for="LabelEntrada2" id="LabelEntrada2"
             >Nombre</label
           >
@@ -60,7 +58,7 @@
           />
         </div>
 
-        <div class="col-12 col-md-5" id="EspContra2">
+        <div class="col-12 col-md-6" id="EspContra2">
           <label class="control-label" for="UsuariInput" id="LabelEntrada2"
             >Usuari</label
           >
@@ -95,21 +93,18 @@
             required
           /><br />
         </div>
-
-        <div id="BotonesEntrada2" class="col-12 ml-2">
-          <button
-            type="button"
-            class="btn col-md-2"
-            id="RegistrarBtn2"
-            onclick="Redirigir()"
-          >
-            Registrar-se
-          </button>
-          <p class="ingresar my-3">
-            Tienes una cuenta creada?
-            <a href="./Entrar.html">ingresar aqui</a>
-          </p>
-        </div>
+        <button
+          type="button"
+          class="btn col-12 col-md-2"
+          id="RegistrarBtn2"
+          onclick="Redirigir()"
+        >
+          Registrar-se
+        </button>
+        <p class="ingresar my-3 col-12">
+          Tienes una cuenta creada?
+          <a href="./Entrar.html">Ingresar aqui</a>
+        </p>
       </form>
     </div>
     <script
