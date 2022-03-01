@@ -6,27 +6,32 @@ div h1, h2{
     text-align: center;
     margin-bottom: 3%;
 }
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   
-  }
-button { 
+
+button.download { 
     float: right;
     margin-right: 4%;
+    position:absolute;
+    bottom:0;
+    right: 0;
+    margin-bottom: 12px;
+    border-radius: 15px;
 }
 
-
-  
 .item {
-    
-    width: 28%;
-    padding-bottom: 15%; /* Same as width, sets height */
+    margin-left: 1px;
+    height: 400px;
+    /* padding-bottom: 15%; Same as width, sets height */
     margin-bottom:  3%; /* (100-32*3)/2 */
     position: relative;
-    background: aquamarine;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #4d8abf;
     border-radius: 25px;
+    transition: background-color .5s;
+  }
+
+  .item:hover{
+    background: rgba(255, 255, 255, 0.35);
+
   }
 .pdf {
     list-style-image: url('https://img.icons8.com/office/16/000000/pdf.png');
@@ -45,9 +50,6 @@ button {
 .url{
     list-style-image: url("https://img.icons8.com/external-icongeek26-glyph-icongeek26/16/000000/external-url-essentials-icongeek26-glyph-icongeek26.png");
 }
-
-
-
 
 li{
     font-weight: bold;
