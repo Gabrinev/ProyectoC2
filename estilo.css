@@ -1,103 +1,79 @@
-.entrada2
-{
-    height: 100px;
+#TituloEntrada2 {
+  font-family: "Barlow Condensed";
+  color: white;
 }
-#BotonesEntrada2
-{
-    margin-top:85px;
-	margin-left:10px;
-	margin-right:10px;
+#LabelEntrada2 {
+  font-size: 23px;
+  font-family: "Barlow Condensed";
+  color: white;
 }
-#TituloEntrada2
-{
-	position: relative;
-	top: 15px;
-	font-family: 'Barlow Condensed';
-	color: white;
+#bodyEntrada2 {
+  background-image: url("FondoEntrada.jpg");
 }
-#LabelEntrada2
-{
-	font-size: 23px;
-	font-family: 'Barlow Condensed';
-	color: white;
+#bodyEntrada2 {
+  position: relative;
+  height: 90vh;
 }
-#bodyEntrada2
-{
-	background-image: url("FondoEntrada.jpg");
+#UsuariInput2,
+#ContraInput2 {
+  box-shadow: 0px 3px 2px #00294d;
 }
-#EspUsuari2
-{
-	margin-top:30px;
-}
-#UsuariInput2
-{
-	box-shadow: 0px 3px 2px #00294d;
-}
-#ContraInput2
-{
-	box-shadow: 0px 3px 2px #00294d;
-}
-#EspContra2
-{
-	margin-top:30px;
-}
-#LabelEntrada2
-{
-    margin-bottom:8px;
-}
-#containerBackground2
-{  
-    margin-left: 0 ;
-    margin-right: 0;
-    max-width: 100% !important;
-	height: 406px;
-    margin-bottom:100px;
-    margin-top:100px;
-    background-color: #004480;
-	box-shadow: 0px 5px 2px #00294d;
-}
-#containerContent2
-{  
-    margin-top:25px;
-    margin-left: 20px;
-    margin-right: 0;
-    max-width: 100% !important;
-	height: 406px;
-    margin-bottom:100px;
-}
-#ContinuarBtn2
-{   
-    height: 50px;
-	font-family: 'Barlow Condensed';
-	color: white;
-	background-color: #007ae6;
-	border-radius: 15px;
-	box-shadow: 0px 3px 2px #00294d;
-	transition: all 200ms;
-}
-#ContinuarBtn2:hover {background-color: #005fb3}
 
-#ContinuarBtn2:active 
-{
+#LabelEntrada2 {
+  color: white;
+  margin-bottom: 8px;
+}
+#formEntrada2 {
+  height: 50px;
+}
+#containerBackground2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 5px;
+  background-color: #004480;
+  box-shadow: 0px 5px 2px #00294d;
+  min-height: 450px;
+}
+#ContinuarBtn2 {
+  font-family: "Barlow Condensed";
+  font-size: 19px;
+  color: white;
+  background-color: #007ae6;
+  border-radius: 15px;
+  box-shadow: 0px 3px 2px #00294d;
+  transition: all 200ms;
+}
+#ContinuarBtn2:hover {
+  background-color: #005fb3;
+}
+
+#ContinuarBtn2:active {
   background-color: #00294d;
   box-shadow: 0 5px #001b33;
   transform: translateY(4px);
 }
-#RegistrarBtn2
-{   
-    height: 50px;
-	font-family: 'Barlow Condensed';
-	color: white;
-	background-color: #007ae6;
-	border-radius: 15px;
-	box-shadow: 0px 3px 2px #00294d;
-	transition: all 200ms;
+#RegistrarBtn2 {
+  font-family: "Barlow Condensed";
+  font-size: 19px;
+  color: white;
+  background-color: #007ae6;
+  border-radius: 15px;
+  box-shadow: 0px 3px 2px #00294d;
+  transition: all 200ms;
 }
-#RegistrarBtn2:hover {background-color: #005fb3}
+#RegistrarBtn2:hover {
+  background-color: #005fb3;
+}
 
-#RegistrarBtn2:active2 
-{
+#RegistrarBtn2:active {
   background-color: #00294d;
   box-shadow: 0 5px #001b33;
   transform: translateY(4px);
+}
+
+.ingresar {
+  color: white;
 }
