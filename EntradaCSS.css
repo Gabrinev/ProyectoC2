@@ -2,25 +2,102 @@
 {
     height: 100px;
 }
-#botones
+#BotonesEntrada
 {
-    margin-bottom:100px;
+    margin-top:85px;
+	margin-left:10px;
+	margin-right:10px;
 }
-label
+#TituloEntrada
+{
+	position: relative;
+	top: 15px;
+	font-family: 'Barlow Condensed';
+	color: white;
+}
+#LabelEntrada
+{
+	font-size: 23px;
+	font-family: 'Barlow Condensed';
+	color: white;
+}
+#bodyEntrada
+{
+	background-image: url("FondoEntrada.jpg");
+}
+#EspUsuari
+{
+	margin-top:30px;
+}
+#UsuariInput
+{
+	box-shadow: 0px 3px 2px #00294d;
+}
+#ContraInput
+{
+	box-shadow: 0px 3px 2px #00294d;
+}
+#EspContra
+{
+	margin-top:30px;
+}
+#LabelEntrada
 {
     margin-bottom:8px;
 }
-.container
+#containerBackground
 {  
     margin-left: 0 ;
     margin-right: 0;
     max-width: 100% !important;
+	height: 406px;
     margin-bottom:100px;
     margin-top:100px;
-    background-color: aquamarine;
+    background-color: #004480;
+	box-shadow: 0px 5px 2px #00294d;
 }
-button
-{
+#containerContent
+{  
+    margin-top:25px;
+    margin-left: 20px;
+    margin-right: 0;
+    max-width: 100% !important;
+	height: 406px;
     margin-bottom:100px;
+}
+#ContinuarBtn
+{   
     height: 50px;
+	font-family: 'Barlow Condensed';
+	color: white;
+	background-color: #007ae6;
+	border-radius: 15px;
+	box-shadow: 0px 3px 2px #00294d;
+	transition: all 200ms;
+}
+#ContinuarBtn:hover {background-color: #005fb3}
+
+#ContinuarBtn:active 
+{
+  background-color: #00294d;
+  box-shadow: 0 5px #001b33;
+  transform: translateY(4px);
+}
+#RegistrarBtn
+{   
+    height: 50px;
+	font-family: 'Barlow Condensed';
+	color: white;
+	background-color: #007ae6;
+	border-radius: 15px;
+	box-shadow: 0px 3px 2px #00294d;
+	transition: all 200ms;
+}
+#RegistrarBtn:hover {background-color: #005fb3}
+
+#RegistrarBtn:active 
+{
+  background-color: #00294d;
+  box-shadow: 0 5px #001b33;
+  transform: translateY(4px);
 }
