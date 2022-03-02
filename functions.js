@@ -5,16 +5,16 @@ function validar() {
   nombre = document.getElementById("nombre").value;
   apellidos = document.getElementById("apellidos").value;
   correo = document.getElementById("correo").value;
-  clave = document.getElementById("clave1").value;
+  usuario = document.getElementById("usuario").value;
+  clave = document.getElementById("clave").value;
   telefono = document.getElementById("telefono").value;
   expresion = /^([da-z_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
-  var contra1 = document.getElementById("clave1").value;
-  var contra2 = document.getElementById("clave2").value;
 
   if (
     nombre === "" ||
     apellidos === "" ||
     correo === "" ||
+    usuario === "" ||
     clave === "" ||
     telefono === ""
   ) {
@@ -29,18 +29,17 @@ function validar() {
   } else if (correo.length > 100) {
     alert("El correo es muy largo");
     return false;
-  } else if (!expresion.test(correo)) {
+  } else if (expresion.test(correo)) {
     alert("El correo no es valido");
     return false;
-  } else if (telefono.length != 9) {
-    alert("El telefono no es correcto");
+  } else if (usuario.length > 29 || clave.length > 20) {
+    alert("El usuario y la clave solo debe tener 20 cadracteres como maximo");
+    return false;
+  } else if (telefono.length > 10) {
+    alert("El telefono es muy largo");
     return false;
   } else if (isNaN(telefono)) {
     alert("El telefono ingresando no es un número");
-    return false;
-  } else if (contra1 != contra2){
-    console.log("in");
-    alert("Las contraseñas no coinciden");
     return false;
   }
 
@@ -58,6 +57,8 @@ function Comprobar() {
   var ContraInsertat = $("#ContraInput").val();
   if (UsuariInsertat === "pepito@gmail.com" && ContraInsertat === "123456X") 
   {   
+    document.cookie = `Usuario=pepito@gmail.com`;
+    document.cookie = `Contraseña=123456X`;
     window.location.href = "./home.html";
   }
   else
@@ -67,18 +68,15 @@ function Comprobar() {
  
 }
 
-function Redirigir() 
-{
+function Redirigir() {
   window.location.href = "./registro.html";
 }
 
 
-function GetCookie() 
-{
+function GetCookie() {
   let tenemoscookies = document.cookie;
   console.log(tenemoscookies);
-  if (tenemoscookies == "") 
-  {
+  if (tenemoscookies == "") {
     alert("Necesita registrarse para visualizar esta página");
     window.location.href = "./registro.html";
   }
