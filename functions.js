@@ -34,7 +34,7 @@ function validar() {
     alert("El correo no es valido");
     return false;
   } else if (telefono.length != 9) {
-    alert("El telefono es muy largo");
+    alert("El telefono no es correcto");
     return false;
   } else if (isNaN(telefono)) {
     alert("El telefono ingresando no es un número");
