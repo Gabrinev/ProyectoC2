@@ -5,8 +5,8 @@ function validar() {
   nombre = document.getElementById("nombre").value;
   apellidos = document.getElementById("apellidos").value;
   correo = document.getElementById("correo").value;
-  usuario = document.getElementById("usuarioFormulario").value;
-  clave = document.getElementById("claveFormulario").value;
+  usuario = document.getElementById("usuario").value;
+  clave = document.getElementById("clave").value;
   telefono = document.getElementById("telefono").value;
   expresion = /^([da-z_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
 
@@ -29,7 +29,7 @@ function validar() {
   } else if (correo.length > 100) {
     alert("El correo es muy largo");
     return false;
-  } else if (!expresion.test(correo)) {
+  } else if (expresion.test(correo)) {
     alert("El correo no es valido");
     return false;
   } else if (usuario.length > 29 || clave.length > 20) {
@@ -43,8 +43,9 @@ function validar() {
     return false;
   }
 
-  document.cookie = `Usuario=${nombre}`;
-  window.location.href = "./Entrar.html";
+  document.cookie = `Usuario=${usuario}`;
+  document.cookie = `Contraseña=${clave}`;
+  window.location.href = "./home.html";
 }
 
 
@@ -54,17 +55,16 @@ function validar() {
 function Comprobar() {
   var UsuariInsertat = $("#UsuariInput").val();
   var ContraInsertat = $("#ContraInput").val();
-  console.log("Hola");
-  if (UsuariInsertat === "Pepito" && ContraInsertat === "123456X") {
-    document.cookie = "UsuariInsertat=Pepito; Contrasenya=123456X";
+  expresion = /^([da-z_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
+  if (expresion.test(UsuariInsertat) && UsuariInsertat === "Pepito@gmail.com" && ContraInsertat === "123456X") 
+  {   
     window.location.href = "./home.html";
   }
-  if (UsuariInsertat != "Pepito" && ContraInsertat != "123456X") {
+  else
+  {
     alert("Nom d'usuari o contrasenya incorrectes");
   }
-  if (UsuariInsertat === "Pepito" && ContraInsertat != "123456X") {
-    alert("Contrasenya incorrecta");
-  }
+ 
 }
 
 function Redirigir() {
