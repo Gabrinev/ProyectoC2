@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Log In</title>
-    <script src="functions.js"></script>
+    <script src="validar.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Barlow Condensed"
       rel="stylesheet"
@@ -24,7 +24,7 @@
       <form id="formEntrada2" class="row justify-content-beginning mx-5 my-2">
         <div class="col-12 col-md-6" id="EspUsuari2">
           <label class="control-label LabelEntrada2" for="LabelEntrada2"
-            >Nombre</label
+            >Nombre y Apellidos</label
           >
           <input
             type="text"
@@ -35,10 +35,10 @@
             required
           />
           <label class="control-label LabelEntrada2" for="UsuariInput"
-            >Apellidos</label
+            >Fecha</label
           >
           <input
-            type="text"
+            type="date"
             class="form-control"
             id="apellidos"
             name="apellidos"
@@ -60,35 +60,37 @@
 
         <div class="col-12 col-md-6" id="EspContra2">
           <label class="control-label LabelEntrada2" for="UsuariInput"
-            >Usuari</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="usuario"
-            name="usuario"
-            placeholder="Usuario"
-            required
-          />
-          <label class="control-label LabelEntrada2" for="UsuariInput"
             >Contraseña</label
           >
           <input
             type="password"
             class="form-control"
-            id="clave"
-            name="clave"
+            id="clave1"
+            name="paswd1"
             placeholder="Contraseña"
             required
           />
           <label class="control-label LabelEntrada2" for="UsuariInput"
-            >Teléfono</label
+            >Repetir contraseña</label
+          >
+           
+
+          <input
+            type="password"
+            class="form-control"
+            id="clave2"
+            name="paswd2"
+            placeholder="Repetir Contraseña"
+            required
+          />
+          <label class="control-label LabelEntrada2" for="UsuariInput"
+            >Telefono</label
           >
           <input
-            type="text"
+            type="number"
             class="form-control"
             id="telefono"
-            name="Teléfono"
+            name="telefono"
             placeholder="telefono"
             required
           /><br />
@@ -97,7 +99,7 @@
           type="button"
           class="btn col-12 col-md-2"
           id="RegistrarBtn2"
-          onclick="validar()"
+          onclick="validar2()"
         >
           Registrar-se
         </button>
