@@ -3,8 +3,8 @@ function validar() {
   nombre = document.getElementById("nombre").value;
   apellidos = document.getElementById("apellidos").value;
   correo = document.getElementById("correo").value;
-  usuario = document.getElementById("usuario").value;
-  clave = document.getElementById("clave").value;
+  usuario = document.getElementById("usuarioFormulario").value;
+  clave = document.getElementById("claveFormulario").value;
   telefono = document.getElementById("telefono").value;
   expresion = /^([da-z_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
 
