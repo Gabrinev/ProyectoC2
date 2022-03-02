@@ -1,0 +1,11 @@
+body{
+    max-width: 550px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding:15px;
+     background-image:url(FondoEntrada.jpg);
+      border: 2px solid rgb(193, 225, 255); 
+      border-radius: 15px;
+    margin-top: 60px;
+}
+

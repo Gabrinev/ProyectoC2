@@ -71,3 +71,8 @@ ul.list {
 hr {
   border: 1px solid;
 }
+@media (max-width:767px){
+  footer{
+    width:300px;
+  }
+}
