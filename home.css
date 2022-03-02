@@ -73,6 +73,6 @@ hr {
 }
 @media (max-width:767px){
   footer{
-    width:300px;
+    width:300px !important;
   }
 }
