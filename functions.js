@@ -55,8 +55,7 @@ function validar() {
 function Comprobar() {
   var UsuariInsertat = $("#UsuariInput").val();
   var ContraInsertat = $("#ContraInput").val();
-  expresion = /^([da-z_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
-  if (expresion.test(UsuariInsertat) && UsuariInsertat === "pepito@gmail.com" && ContraInsertat === "123456X") 
+  if (UsuariInsertat === "pepito@gmail.com" && ContraInsertat === "123456X") 
   {   
     window.location.href = "./home.html";
   }
