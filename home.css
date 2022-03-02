@@ -6,6 +6,10 @@ main {
   display: flex;
   flex-direction: row;
 }
+body{
+  background-image: url(FondoEntrada.jpg);
+  user-select: none;
+}
 
 .item {
   font-size: 1.5rem;
