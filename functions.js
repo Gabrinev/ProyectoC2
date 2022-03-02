@@ -66,6 +66,20 @@ function Comprobar() {
  
 }
 
-function Redirigir() {
+function Redirigir() 
+{
   window.location.href = "./registro.html";
 }
+
+
+function GetCookie() 
+{
+  let tenemoscookies = document.cookie;
+  console.log(tenemoscookies);
+  if (tenemoscookies == "") 
+  {
+    alert("Necesita registrarse para visualizar esta página");
+    window.location.href = "./registro.html";
+  }
+}
+
