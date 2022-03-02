@@ -6,6 +6,10 @@ main {
   display: flex;
   flex-direction: row;
 }
+body{
+  background-image: url(FondoEntrada.jpg);
+  user-select: none;
+}
 
 .item {
   font-size: 1.5rem;
@@ -66,4 +70,9 @@ ul.list {
 
 hr {
   border: 1px solid;
+}
+@media (max-width:767px){
+  footer{
+    width:300px;
+  }
 }

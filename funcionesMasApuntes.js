@@ -11,6 +11,11 @@ function ModifyCorreo() {
 }
 
 function DevolverPedido() {
+  if($("#TextInput").val()===""){
+    alert("No has añadido descripción")
+    return
+  }
+  // console.log()
   alert(
     "Buenos dias\n Se te va a buscar documentación con:\n Descripción: " +
       $("#TextInput").val() +
